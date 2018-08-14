@@ -48,24 +48,6 @@
 			-ms-touch-action: none;
 		}
     </style>
-	
-	<!-- jQuery (required) & jQuery UI + theme (optional) -->
-	<link href="https://mottie.github.io/Keyboard/docs/css/jquery-ui.min.css" rel="stylesheet">
-	<!-- still using jQuery v2.2.4 because Bootstrap doesn't support v3+ -->
-	<script src="https://mottie.github.io/Keyboard/docs/js/jquery-latest.min.js"></script>
-	<script src="https://mottie.github.io/Keyboard/docs/js/jquery-ui.min.js"></script>
-	<!-- <script src="docs/js/jquery-migrate-3.0.0.min.js"></script> -->
-
-	<!-- keyboard widget css & script (required) -->
-	<link href="https://mottie.github.io/Keyboard/css/keyboard.css" rel="stylesheet">
-	<script src="https://mottie.github.io/Keyboard/js/jquery.keyboard.js"></script>
-
-	<!-- keyboard extensions (optional) -->
-	<script src="https://mottie.github.io/Keyboard/js/jquery.mousewheel.js"></script>
-	<script src="https://mottie.github.io/Keyboard/js/jquery.keyboard.extension-typing.js"></script>
-	<script src="https://mottie.github.io/Keyboard/js/jquery.keyboard.extension-autocomplete.js"></script>
-	<script src="https://mottie.github.io/Keyboard/js/jquery.keyboard.extension-caret.js"></script>
-	<link href="https://www.jqueryscript.net/demo/Customizable-Virtual-Keyboard-With-jQuery-Bootstrap/assets/plugins/jquery.virtual_keyboard/jquery.virtual_keyboard.css" rel="stylesheet" type="text/css"/>
 	</head> 
  <!-- 
 888888b.                 888      888    d8b                                     d8b          888      888   .d8888b.                   88b.  88b.   
@@ -84,6 +66,7 @@
 	<div id="fb-root"></div>
 	
 	<a href="https://hotavn.ga/" class="btn btn-danger btn-lg">HotaVN</a>
+	<button type="button" class="btn btn-danger btn-lg ml-2" data-toggle="modal" data-target="#howtoplay">How to play</button>
 	
 	<script>
 	// Issue a warning if trying to preview an exported project on disk.
@@ -153,11 +136,6 @@
 			navigator.serviceWorker.register("sw.js", { scope: "./" });
 		}
     </script>
-	<script>
-	$("#c2canvas").keyboard();
-	</script>
-		 <script src="https://www.jqueryscript.net/demo/Customizable-Virtual-Keyboard-With-jQuery-Bootstrap/assets/plugins/jquery.virtual_keyboard/jquery.virtual_keyboard.js" type="text/javascript"></script>
-
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115050357-1"></script>
 <script>
@@ -180,5 +158,33 @@
   <source src="https://hotamago.github.io/sans/remix.mp3" type="audio/mpeg">
 Your browser does not support the audio element.
 </audio>
+
+<div class="modal fade show" id="howtoplay" style="padding-right: 16px; display: block;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">How to play</h4>
+        <button type="button" class="close" data-dismiss="modal">×</button>
+      </div>
+      <!-- Modal body -->
+      <div class="modal-body">
+	  <h5>How to have a bad time</h5>
+	  <p>
+		  [Z] - Confirm
+		  [X] - Confirm
+		  [Alt + F5] - Quit =))
+		  [F11] - Fullscreen
+		  When HP=0, you lose.
+	  </p>
+	  </div>
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
 </body> 
 </html> 
