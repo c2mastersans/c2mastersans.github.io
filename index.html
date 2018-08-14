@@ -49,7 +49,22 @@
 		}
     </style>
 	
+	<!-- jQuery (required) & jQuery UI + theme (optional) -->
+	<link href="https://mottie.github.io/Keyboard/docs/css/jquery-ui.min.css" rel="stylesheet">
+	<!-- still using jQuery v2.2.4 because Bootstrap doesn't support v3+ -->
+	<script src="https://mottie.github.io/Keyboard/docs/js/jquery-latest.min.js"></script>
+	<script src="https://mottie.github.io/Keyboard/docs/js/jquery-ui.min.js"></script>
+	<!-- <script src="docs/js/jquery-migrate-3.0.0.min.js"></script> -->
 
+	<!-- keyboard widget css & script (required) -->
+	<link href="https://mottie.github.io/Keyboard/css/keyboard.css" rel="stylesheet">
+	<script src="https://mottie.github.io/Keyboard/js/jquery.keyboard.js"></script>
+
+	<!-- keyboard extensions (optional) -->
+	<script src="https://mottie.github.io/Keyboard/js/jquery.mousewheel.js"></script>
+	<script src="https://mottie.github.io/Keyboard/js/jquery.keyboard.extension-typing.js"></script>
+	<script src="https://mottie.github.io/Keyboard/js/jquery.keyboard.extension-autocomplete.js"></script>
+	<script src="https://mottie.github.io/Keyboard/js/jquery.keyboard.extension-caret.js"></script>
 </head> 
  <!-- 
 888888b.                 888      888    d8b                                     d8b          888      888   .d8888b.                   88b.  88b.   
@@ -137,6 +152,9 @@
 			navigator.serviceWorker.register("sw.js", { scope: "./" });
 		}
     </script>
+	<script>
+	$("#c2canvas").keyboard();
+	</script>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115050357-1"></script>
 <script>
